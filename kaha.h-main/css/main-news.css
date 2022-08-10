@@ -1,0 +1,173 @@
+/* main-news.css */
+
+/* 뉴스 | 공지 탭 버튼 */
+.tab {
+    /* outline: 1px solid green; */
+    margin-bottom: 50px;
+}
+
+.tab .container-n .tab-btn {
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* outline: 1px solid orange; */
+}
+
+.tab .container-n .tab-btn li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.tab .container-n .tab-btn li.on:first-child {
+    border-top-left-radius: 10px;
+    background: #245214;
+    border: 1px solid #245214;
+}
+
+.tab .container-n .tab-btn li:first-child {
+    border-top-left-radius: 10px;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.tab .container-n .tab-btn li:last-child {
+    border-top-right-radius: 10px;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.tab .container-n .tab-btn li.on:last-child {
+    border-top-right-radius: 10px;
+    background: #245214;
+    border: 1px solid #245214;
+}
+
+.tab .container-n .tab-btn li.on:first-child > a {
+    color: #fff;
+}
+
+.tab .container-n .tab-btn li:first-child > a {
+    color: #000;
+}
+
+.tab .container-n .tab-btn li.on:last-child > a {
+    color: #fff;
+}
+
+.tab .container-n .tab-btn li:last-child > a {
+    color: #000;
+}
+
+/* 삼각형 */
+.tab .container-n .tab-btn .news-btn .tri,
+.tab .container-n .tab-btn .noti-btn .tri
+{
+    position: absolute;
+    /* outline: 1px solid red; */
+    width: 0px;
+    height: 0px;
+    border-top: 22px solid #245214;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    bottom: -20px;
+    display: none;
+}
+
+.tab .container-n .tab-btn .news-btn .tri.on,
+.tab .container-n .tab-btn .noti-btn .tri.on 
+{
+    display: block;
+}
+
+/* 뉴스/공지 카드 목록 */
+.news-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card {
+    width: 450px;
+    height: 450px;
+    /* outline: 1px solid #333; */
+    margin-right: 15px;
+    border-radius: 0;
+}
+
+.card:first-child {
+    /* margin-left: 0; */
+}
+
+.card:last-child {
+    /* margin-right: 0; */
+}
+
+.card .img {
+    width: 100%;
+    height: 220px;
+    background: #666;
+}
+
+.card-body {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    padding: 0;
+}
+
+.card .card-body .card-title {
+    margin: 0 0 40px 20px;
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .card-body .card-text {
+    position: absolute;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card .card-body .card-date {
+    position: absolute;
+    margin-left: 20px;
+    bottom: 10px;
+    width: 70px;
+    font-size: 14px;
+}
+
+.card .card-body .more-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+}
+
+/* 탭버튼 기능 */
+#news {
+    display: none;
+}
+
+#news.on {
+    display: flex;
+}
+
+#noti {
+    display: none;
+}
+
+#noti.on {
+    display: flex;
+}

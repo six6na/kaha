@@ -1,0 +1,354 @@
+/* news.css */
+a:hover {
+    text-decoration: none;
+}
+
+/* 이미지 배너 */
+.banner-title {
+    /* outline: 1px solid red; */
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/image-title.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2단계 메뉴 */
+.depth2-menu {
+    /* outline: 1px solid red; */
+    margin-bottom: 50px;
+    height: 70px;
+}
+
+.depth2-menu .d2-gnb {
+    /* outline: 1px solid green; */
+    border-bottom: 1px solid #d3d3d3;
+    display: flex;
+    /* align-items: flex-start; */
+}
+
+.depth2-menu .d2-gnb .news,
+.depth2-menu .d2-gnb .noti
+{
+    color: #000;
+    width: 110px;
+    height: 70px;
+    margin: 0;
+    /* outline: 1px solid red; */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.depth2-menu .d2-gnb .news.on,
+.depth2-menu .d2-gnb .noti.on
+
+{
+    color: #000;
+    width: 110px;
+    height: 70px;
+    margin: 0;
+    /* outline: 1px solid red; */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #155295;
+}
+
+/* 검색창 */
+.search {
+   margin-bottom: 50px;
+   display: flex;
+   align-items: flex-end;
+   flex-direction: column;
+}
+
+.search #s-option {
+    /* outline: 1px solid red; */
+    width: 80px;
+    margin-right: 15px;
+    height: 40px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.search.news-bt {
+    margin-bottom: 0px;
+}
+
+.search .search-box {
+    /* outline: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.search .search-box input {
+    border: none;
+    background: none;
+    outline: none;
+    padding-left: 10px;
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.search .search-box .search-btn {
+    border: none;
+    background: none;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.search .search-box .search-btn i {
+    font-size: 24px;
+}
+
+/* 뉴스 카드 목록 */
+.news-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card {
+    width: 450px;
+    height: 450px;
+    /* outline: 1px solid #333; */
+    border-radius: 0;
+    margin: 0;
+    margin-top: 50px;
+    border: 1px solid #d3d3d3;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.card:first-child {
+    /* margin-left: 0; */
+}
+
+.card:last-child {
+    /* margin-right: 0; */
+}
+
+.card .img {
+    width: 100%;
+    height: 220px;
+    background: #666;
+    margin: 0;
+}
+
+.card-body {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    padding: 0;
+    margin: 0;
+}
+
+.card .card-body .card-title {
+    margin: 0 0 20px 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .card-body .card-text {
+    position: absolute;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card .card-body .card-date {
+    position: absolute;
+    margin-left: 20px;
+    bottom: 10px;
+    width: 70px;
+    font-size: 14px;
+}
+
+.card .card-body .more-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+}
+
+/* 공지 목록 */
+.board-table {
+    font-size: 13px;
+    width: 100%;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #ccc;
+}
+  
+.board-table a {
+    color: #333;
+    display: inline-block;
+    line-height: 1.4;
+    word-break: break-all;
+    vertical-align: middle;
+}
+
+.board-table a:hover {
+    text-decoration: underline;
+}
+
+.board-table th {
+    text-align: center;
+}
+  
+.board-table .th-num {
+    width: 100px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+  
+.board-table .th-date {
+    width: 200px;
+}
+  
+.board-table tbody td {
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+}
+
+.board-table tbody tr th a {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    /* outline: 1px solid blue; */
+}
+  
+.board-table tbody th {
+    padding-left: 28px;
+    padding-right: 14px;
+    border-top: 1px solid #e7e7e7;
+    text-align: left;
+    /* outline: 1px solid blue; */
+}
+  
+.board-table tbody th p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    /* display: none; */
+}
+.board-table tbody th p span {
+    font-weight: 500;
+}
+   
+/* pagination */
+.page-box {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.page-box li a {
+    color: #000;
+    margin-right: 10px;
+}
+
+.page-box li:last-child a {
+    margin-right: 0;
+}
+
+.page-box li:first-child > a.on {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+/* footer */
+#main-footer {
+    background: #F2F3F4;
+    /* outline: 1px solid blue; */
+    width: 100%;
+    margin-top: 50px;
+    height: 160px;
+    color: #888;
+    position: relative;
+}
+
+#main-footer .fBox {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: flex;
+    height: 100%;
+}
+
+#main-footer .fBox .footer-menu {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#main-footer img {
+    width: 236px;
+}
+
+#main-footer .sns-link {
+    /* outline: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-footer .sns-link a {
+    font-size: 30px;
+    color: #888;
+    /* outline: 1px solid red; */
+}
+
+#main-footer .fBox .fr-menu {
+    position: absolute;
+    right: 30px;
+}
+
+#main-footer .family-site {
+    margin: 0;
+    /* outline: 1px solid green; */
+    margin-top: 45px;
+    width: 162px;
+}
+
+#main-footer .family-site #siteList {
+    width: 162px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #666;
+}
+
+#siteList {
+    outline: none;
+}

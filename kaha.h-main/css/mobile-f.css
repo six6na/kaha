@@ -1,0 +1,103 @@
+/* mobile-f.css */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+ul {
+    list-style-type: none;
+}
+  
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+
+.container-n {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* outline: 1px solid red; */
+}
+
+
+/* footer */
+#main-footer {
+    background: #F2F3F4;
+    /* outline: 1px solid blue; */
+    width: 100%;
+    margin-top: 50px;
+    height: 190px;
+    color: #888;
+    position: relative;
+    text-align: center;
+}
+
+#main-footer .fBox {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#main-footer .fBox .footer-menu {
+    /* margin-top: 10px; */
+    font-size: 8px;
+}
+
+#main-footer img {
+    width: 160px;
+}
+
+#main-footer .sns-link {
+    width: 112px;
+    /* outline: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-footer .sns-link a {
+    font-size: 22px;
+    color: #888;
+    /* outline: 1px solid red; */
+}
+
+#main-footer .fBox .fr-menu {
+    /* position: absolute; */
+    /* right: 30px; */
+}
+
+#main-footer .family-site {
+    /* margin: 0; */
+    /* outline: 1px solid green; */
+    /* margin-top: 45px; */
+    width: 115px;
+}
+
+#main-footer .family-site #siteList {
+    width: 112px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #666;
+}
+
+#siteList {
+    outline: none;
+}

@@ -1,0 +1,112 @@
+
+/* footer */
+
+/* style.css */
+:root {
+    --brand-color: #245124;
+    --bg-color: #fff;
+    --text-color-dark: #000;
+    --text-color-light: #888;
+
+    --pc-header-height: 90px;
+    --mobile-header-height: 60px;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+ul {
+    list-style-type: none;
+}
+  
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+
+.container-n {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* outline: 1px solid red; */
+}
+
+
+/* footer */
+#main-footer {
+    background: #F2F3F4;
+    /* outline: 1px solid blue; */
+    width: 100%;
+    margin-top: 50px;
+    height: 160px;
+    color: #888;
+    position: relative;
+}
+
+#main-footer .fBox {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: flex;
+    height: 100%;
+}
+
+#main-footer .fBox .footer-menu {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#main-footer img {
+    width: 236px;
+}
+
+#main-footer .sns-link {
+    /* outline: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-footer .sns-link a {
+    font-size: 30px;
+    color: #888;
+    /* outline: 1px solid red; */
+}
+
+#main-footer .fBox .fr-menu {
+    position: absolute;
+    right: 30px;
+}
+
+#main-footer .family-site {
+    margin: 0;
+    /* outline: 1px solid green; */
+    margin-top: 45px;
+    width: 162px;
+}
+
+#main-footer .family-site #siteList {
+    width: 162px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #666;
+}
+
+#siteList {
+    outline: none;
+}
